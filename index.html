@@ -5,12 +5,82 @@
   <meta name="viewport" content = "width=device-width, initial-scale=1.0">
   <title>Trig Resource Hub</title>
   <link rel = "stylesheet" href = "styles.css">
+  <style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f9f9d9;
+  
+  }
+
+  h1 {
+    text-align: center;
+    background: #4CAF50;  
+    color: white;
+    padding: 1em;
+    margin: 0;
+
+  }
+
+
+  .tabs {
+    display: flex;
+    margin: 1em;
+    cursor: pointer;
+  }
+
+  .tab {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    background: #ddd;
+    border: 1px solid #aaa;
+    border-bottom: none;
+  }
+
+  input[type="radio"] {
+    display: none;
+  }
+
+  input[type="radio"]:checked + label {
+    background: #fff;
+    border-bottom: 1px solid #fff;
+    font-weight: bold;
+  }
+
+  .tab-content {
+    border: 1px solid #aaa;
+    background: white;
+    padding: 1em;
+    display: none;
+    margin: 0 1em 1em 1em;
+    border-radius: 5px;
+  }
+
+  #recordings:checked ~ #content-recordings,
+  #summaries:checked ~ #content-summaries {
+    display: block;
+  }
+
+  a {
+    color: #4CAF50;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+</style>
 </head>
 <body>
+
   <h1>Trig Resource Hub</h1>
-  <p>This is a simple home page with no interactive buttons.</p>
-  
-  <!-- Link to the JavaScript file -->
-  <script src="script.js"></script>
-</body>
-</html>
+
+  <div class="tabs">
+    <input type = "radio" id="recordings" name="tab-group" checked>
+    <label class="tab" for="recordings">Recordings</label>
+
+    <input type="radio" id="summaries" name="tab-group">
+    <label class="tab" for="summaries">Summaries</label>
+  </div>
