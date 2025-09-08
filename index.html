@@ -4,83 +4,47 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content = "width=device-width, initial-scale=1.0">
   <title>Trig Resource Hub</title>
+  <style type ="text/css">
+    *{
+      text-decoration: none; 
+    }
+    .navbar{
+      background: rgb(218, 181, 17); font-family: calibri; padding-right: 15px; padding-left: 15px; 
+    }
+    .navdiv{
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .logo a{
+      font-size: 35px; font-weight: 600; color: white;
+    }
+    li{
+      list-style: none; display: inline-block;
+    }
+    li a{
+      color: white; font-size: 18px; font-weight: bold; margin-right: 25px;
+    }
+    button{
+      background-color: black; margin-left: 10px; border-radius: 10px; padding: 10px; width:
+      90px;
+    }
+    button a{
+      color: white; font-weight: bold; font-size: 15px; 
+    }
+  </style>
   <link rel = "stylesheet" href = "styles.css">
-  <style>
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #f9f9d9;
-  
-  }
-
-  h1 {
-    text-align: center;
-    background: #4CAF50;  
-    color: white;
-    padding: 1em;
-    margin: 0;
-
-  }
-
-
-  .tabs {
-    display: flex;
-    margin: 1em;
-    cursor: pointer;
-  }
-
-  .tab {
-    flex: 1;
-    text-align: center;
-    padding: 10px;
-    background: #ddd;
-    border: 1px solid #aaa;
-    border-bottom: none;
-  }
-
-  input[type="radio"] {
-    display: none;
-  }
-
-  input[type="radio"]:checked + label {
-    background: #fff;
-    border-bottom: 1px solid #fff;
-    font-weight: bold;
-  }
-
-  .tab-content {
-    border: 1px solid #aaa;
-    background: white;
-    padding: 1em;
-    display: none;
-    margin: 0 1em 1em 1em;
-    border-radius: 5px;
-  }
-
-  #recordings:checked ~ #content-recordings,
-  #summaries:checked ~ #content-summaries {
-    display: block;
-  }
-
-  a {
-    color: #4CAF50;
-    text-decoration: none;
-  }
-
-  a:hover {
-    text-decoration: underline;
-  }
-</style>
 </head>
 <body>
+  <nav class="navbar">
+    <div class="navdiv">
+        <div class="logo"><a href="#">Trig Resource Hub</a> </div>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <button><a href="#">SignIn</a></button>
+          <button><a href="#">SignUp</a></button>
+        </ul>
+    </div>
 
-  <h1>Trig Resource Hub</h1>
-
-  <div class="tabs">
-    <input type = "radio" id="recordings" name="tab-group" checked>
-    <label class="tab" for="recordings">Recordings</label>
-
-    <input type="radio" id="summaries" name="tab-group">
-    <label class="tab" for="summaries">Summaries</label>
-  </div>
+  </nav>
+</body>
