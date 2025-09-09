@@ -23,7 +23,7 @@ function showContent(tab) {
         <th>Summary PDF</th>
       </tr>
       <tr>
-        <td>THU 2025-08-28: Chapter 6.1 ANGLES AND THEIR MEASURES</td>
+        <td>THU 2025-08-28: CHAPTER 6.1 ANGLES AND THEIR MEASURES</td>
         <td>
           <details>
             <summary style="cursor:pointer; font-weight:bold; color:#333;">
@@ -57,6 +57,18 @@ function showContent(tab) {
             </details>
             </td>
         </tr>
+
+        <tr>
+        <td>MON 2025-09-08: CHAPTER 6.4 GRAPHS OF THE SINE AND COSINE FUNCTIONS</td>
+        <td>
+            <details>
+                <summary style="cursor:pointer; font-weight:bold; color:#333;">
+                    NONE
+                </summary>
+            </details>
+            </td>
+        </tr>
+
     
 
 
