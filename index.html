@@ -2,73 +2,36 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content = "width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Trig Resource Hub</title>
-  <style type ="text/css">
-    *{
-      text-decoration: none; 
-    }
-    .navbar{
-      background: rgb(218, 181, 17); font-family: calibri; padding-right: 15px; padding-left: 15px; 
-    }
-    .navdiv{
-      display: flex; align-items: center; justify-content: space-between;
-    }
-    .logo a{
-      font-size: 35px; font-weight: 600; color: white;
-    }
-    li{
-      list-style: none; display: inline-block;
-    }
-    li a{
-      color: white; font-size: 18px; font-weight: bold; margin-right: 25px;
-    }
-    
-    button{
-      background-color: black; margin-left: 10px; border-radius: 10px; padding: 10px; width:
-      90px;
-    }
-    button a{
-      color: white; font-weight: bold; font-size: 15px; 
-    }
-    .home-message {
-      text-align: center;
-      margin-top: 50px;
-      font-size: 40px;
-      font-family: Arial, sans-serif;
-      color: #333;
-    }
-    footer {
-      text-align: center;
-      font-size: 12px;
-      color: #666;
-      margin-top: 350px;
-      padding: 20px;
-    }
-  </style>
-  <link rel = "stylesheet" href = "styles.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <nav class="navbar">
     <div class="navdiv">
-        <div class="logo"><a href="#">Trig Resource Hub</a> </div>
-        <ul>
-          <li><a href="#">Recordings</a></li>
-          <li><a href="#">Summaries</a></li>
-          <li><a href="#">Transcripts</a></li>
-          <!--<button><a href="#">SignIn</a></button>
-          <button><a href="#">SignUp</a></button>!-->
-        </ul>
+      <div class="logo">
+        <a href="#" onclick="showContent('home')">Trig Resource Hub</a>
+      </div>
+      <ul>
+        <li><a onclick="showContent('recordings')">Recordings</a></li>
+        <li><a onclick="showContent('summaries')">Summaries</a></li>
+        <li><a onclick="showContent('transcripts')">Transcripts</a></li>
+      </ul>
     </div>  
-
   </nav>
-  </div class="home-message">
+
+  <!-- Content area -->
+  <div class="home-message" id="content">
     <h1>Welcome to the Trig Resource Hub!</h1>
     <p>Your guide to not failing Trig this year *I hope*.</p>
     <p>This is the home page where the tentative pacing guide will soon be posted.</p>
     <p>For recordings, summaries, transcripts, please head over to the tabs on the top right corner.</p>
+  </div>
+
   <footer>
     Designed by Jason Liang.
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
