@@ -5,8 +5,14 @@ function showContent(tab) {
     content.innerHTML = `
       <h1>Welcome to the Trig Resource Hub!</h1>
       <p>Your guide to not failing Trig this year *I hope*.</p>
-      <p>This is the home page where the tentative pacing guide will soon be posted.</p>
+      
       <p>For recordings, summaries, transcripts, please head over to the tabs on the top right corner.</p>
+      📅 TMAH Pacing Calendar Sem 1 2025-2026</h2>
+      <embed src="pdfs/TMAH Pacing Calendar Sem 1 2025-2026.pdf" 
+             type="application/pdf" 
+             width="90%" 
+             height="600px" 
+             style="border:1px solid #ccc; border-radius:10px; margin-top:20px;">
     `;
   } else if (tab === "recordings") {
     content.innerHTML = `
