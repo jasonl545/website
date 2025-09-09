@@ -45,6 +45,18 @@ function showContent(tab) {
             </details>
             </td>
         </tr>
+
+        <tr>
+        <td>THU 2025-09-04: CHAPTER 6.3 PROPERTIES OF THE TRIGONOMETRIC FUNCTIONS</td>
+        <td>
+            <details>
+                <summary style="cursor:pointer; font-weight:bold; color:#333;">
+                    NONE
+                </summary>
+
+            </details>
+            </td>
+        </tr>
     
 
 
