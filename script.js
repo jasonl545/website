@@ -98,3 +98,7 @@ function showContent(tab) {
     `;
   }
 }
+
+window.onload = function() {
+    showContent('home');
+};
