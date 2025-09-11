@@ -7,6 +7,7 @@ function showContent(tab) {
       <p>Your guide to not failing Trig this year *I hope*.</p>
       
       <p>For recordings, summaries, transcripts, please head over to the tabs on the top right corner.</p>
+      <button onclick="showContent('recordings')" class="cta-btn">Explore Resources</button>
       📅 TMAH Pacing Calendar Sem 1 2025-2026</h2>
       <embed src="pdfs/TMAH Pacing Calendar Sem 1 2025-2026.pdf" 
              type="application/pdf" 
@@ -18,7 +19,33 @@ function showContent(tab) {
     content.innerHTML = `
       <h1>Recordings</h1>
       <p>Here you will find all the lecture recordings organized by date.</p>
+      <table class="summary-table">
+        <tr>
+          <th>Topic</th>
+          <th>Recording</th>
+        </tr>
+
+        <tr>
+          <td>THU 0828: CHAPTER 6.1 ANGLES AND THEIR MEASURES</td>
+          <td>
+            <audio controls>
+              <source src="recordings/0828TRIGLECTURE.m4a" type ="audio/mpeg">
+
+          </audio>
+        </td>
+      </tr>
+
+
+
+
+
+
+
+
+
     `;
+
+
   } else if (tab === "summaries") {
   content.innerHTML = `
     <h1>Summaries</h1>
@@ -74,10 +101,20 @@ function showContent(tab) {
             </details>
             </td>
         </tr>
+    <tr>
+        <td>TUE 2025-09-09: CHAPTER 6.4 CHAPTER 6.4 GRAPHS OF THE SINE AND COSINE FUNCTIONS</td>
+        <td>
+            <details>
+                <summary style="cursor:pointer; font-weight:bold; color:#333;">
+                    View PDF
+                </summary>
+                <embed src="pdfs/0909TRIGSUMMARY.pdf" width="400" height="300" type="application/pdf">
+            </details>
+            </td>
+        </tr>
 
-    
 
-
+        
 
 
 
